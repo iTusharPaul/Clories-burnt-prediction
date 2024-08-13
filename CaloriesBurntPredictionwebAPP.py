@@ -11,7 +11,7 @@ import streamlit as st #for creating user interface
 
 
 #loading the saved model
-loaded_model = pickle.load(open('C:/Users/KIIT/Desktop/Machine Learning Specialization/projects/Clories burnt prediction/loaded_model.sav','rb'))
+loaded_model = pickle.load(open('loaded_model.sav','rb'))
 
 
 def caloriePrediction (input_data):
