@@ -8,7 +8,7 @@ Created on Tue Aug 13 10:56:19 2024
 import numpy as np  #for creating input array
 import pickle    #for loading saved model
 import streamlit as st #for creating user interface
-import base64
+
 
 #loading the saved model
 loaded_model = pickle.load(open('C:/Users/KIIT/Desktop/Machine Learning Specialization/projects/Clories burnt prediction/loaded_model.sav','rb'))
