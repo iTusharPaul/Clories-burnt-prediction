@@ -47,7 +47,7 @@ def main():
         input_data = [Gender, Age, Height, Weight, Heart_Rate, Body_Temp]
         input_data_reshaped = np.array(input_data, dtype=np.float64).reshape(1, -1)
         calories = caloriePrediction (input_data_reshaped)
-        final_ans = calories*Duration
+        final_ans = calories * Duration:.2f
         #if successfully runned success meassgae will be the output:
         st.success(f"You have successfully Burnt {final_ans} calories")
     
