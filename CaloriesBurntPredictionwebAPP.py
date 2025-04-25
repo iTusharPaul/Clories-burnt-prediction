@@ -48,7 +48,7 @@ def main():
         input_data_reshaped = np.array(input_data, dtype=np.float64).reshape(1, -1)
         calories = float(caloriePrediction (input_data_reshaped))
         duration = float(Duration)  # Ensure conversion if using text_input
-        final_ans = calories * duration:.2f
+        final_ans = calories * duration
         #if successfully runned success meassgae will be the output:
         st.success(f"You have successfully Burnt {final_ans} calories")
     
