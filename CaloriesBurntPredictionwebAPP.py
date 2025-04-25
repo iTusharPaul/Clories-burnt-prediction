@@ -44,11 +44,11 @@ def main():
     
     #if button is pressed. model will be used for getting prediction
     if(st.button('Predict My Calories Burnt')):
-        input_data = [Gender, Age, Height, Weight, Duration, Heart_Rate, Body_Temp]
+        input_data = [Gender, Age, Height, Weight, Heart_Rate, Body_Temp]
         input_data_reshaped = np.array(input_data, dtype=np.float64).reshape(1, -1)
         calories = caloriePrediction (input_data_reshaped)
         #if successfully runned success meassgae will be the output:
-        st.success(f"You have successfully Burnt {calories} calories")
+        st.success(f"You have successfully Burnt {calories*Duration} calories")
     
     
     
